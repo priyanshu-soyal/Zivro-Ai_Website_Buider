@@ -202,6 +202,175 @@ export default function Home() {
           <React.Fragment key={index}>{company.logo}</React.Fragment>
         ))}
       </div>
+
+      {/* Features Section */}
+      <div className="max-w-6xl w-full mx-auto mt-32 mb-20">
+        <h2 className="font-audiowide text-center text-3xl md:text-4xl font-semibold mb-4">
+          Why Choose{" "}
+          <span className="text-[#67E8F9] font-audiowide">Zivro</span>?
+        </h2>
+        <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto font-Baumans text-lg">
+          Build professional websites in minutes with AI-powered tools designed
+          for creators, developers, and businesses.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 px-4">
+          {/* Feature 1 */}
+          <div className="bg-gray-900/60 border border-gray-700 rounded-xl p-6 hover:border-[#22D3EE]/60 transition-all group">
+            <div className="bg-[#22D3EE]/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#22D3EE]/20 transition-all">
+              <svg
+                className="w-6 h-6 text-[#22D3EE]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 className="font-semibold text-xl mb-2 font-Baumans">
+              Lightning Fast
+            </h3>
+            <p className="text-gray-400">
+              Generate complete websites in seconds. Just describe what you want
+              and watch AI bring it to life.
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="bg-gray-900/60 border border-gray-700 rounded-xl p-6 hover:border-[#22D3EE]/60 transition-all group">
+            <div className="bg-[#22D3EE]/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#22D3EE]/20 transition-all">
+              <svg
+                className="w-6 h-6 text-[#22D3EE]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                />
+              </svg>
+            </div>
+            <h3 className="font-semibold text-xl mb-2 font-Baumans">
+              Fully Customizable
+            </h3>
+            <p className="text-gray-400">
+              Make real-time edits with AI assistance. Iterate and refine until
+              your website is pixel-perfect.
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="bg-gray-900/60 border border-gray-700 rounded-xl p-6 hover:border-[#22D3EE]/60 transition-all group">
+            <div className="bg-[#22D3EE]/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#22D3EE]/20 transition-all">
+              <svg
+                className="w-6 h-6 text-[#22D3EE]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3 className="font-semibold text-xl mb-2 font-Baumans">
+              Production Ready
+            </h3>
+            <p className="text-gray-400">
+              Export clean, optimized code. Publish directly or download for
+              your own hosting.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* How It Works Section */}
+      <div className="max-w-6xl w-full mx-auto mt-20 mb-32 px-4">
+        <h2 className="font-audiowide text-center text-3xl md:text-4xl font-semibold mb-4">
+          How It <span className="text-[#67E8F9] font-audiowide">Works</span>
+        </h2>
+        <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
+          Three simple steps to turn your ideas into stunning websites
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-12">
+          {/* Step 1 */}
+          <div className="relative text-center">
+            <div className="bg-gradient-to-br from-[#22D3EE] to-[#3B82F6] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              1
+            </div>
+            <h3 className="font-semibold text-xl mb-3 font-Baumans">
+              Describe Your Vision
+            </h3>
+            <p className="text-gray-400">
+              Tell our AI what kind of website you want. Be as detailed or
+              simple as you like.
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="relative text-center">
+            <div className="bg-gradient-to-br from-[#22D3EE] to-[#3B82F6] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              2
+            </div>
+            <h3 className="font-semibold text-xl mb-3 font-Baumans">
+              AI Generates Code
+            </h3>
+            <p className="text-gray-400">
+              Watch as AI creates a fully functional website with modern design
+              and clean code.
+            </p>
+          </div>
+
+          {/* Step 3 */}
+          <div className="relative text-center">
+            <div className="bg-gradient-to-br from-[#22D3EE] to-[#3B82F6] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              3
+            </div>
+            <h3 className="font-semibold text-xl mb-3 font-Baumans">
+              Customize & Publish
+            </h3>
+            <p className="text-gray-400">
+              Make edits, preview changes, and publish your site to the web
+              instantly.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="max-w-4xl w-full mx-auto mt-20 mb-32 px-4">
+        <div className="bg-gradient-to-br from-[#22D3EE]/10 to-[#3B82F6]/10 border border-[#22D3EE]/30 rounded-2xl p-12 text-center">
+          <h2 className="font-audiowide text-3xl md:text-4xl font-semibold mb-4">
+            Ready to Build Something Amazing?
+          </h2>
+          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
+            Join thousands of creators who are building their dream websites
+            with AI. No coding required, no design skills needed.
+          </p>
+          <button
+            onClick={() =>
+              !session?.user
+                ? navigate("/auth/signin")
+                : window.scrollTo({ top: 0, behavior: "smooth" })
+            }
+            className="bg-gradient-to-r from-[#22D3EE] to-[#3B82F6] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 active:scale-95 transition-all "
+          >
+            {session?.user ? "Start Creating" : "Get Started Free"}
+          </button>
+        </div>
+      </div>
     </section>
   );
 }
