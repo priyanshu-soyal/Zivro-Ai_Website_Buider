@@ -1,7 +1,6 @@
 // Express :-
 import express from "express";
 const app = express();
-const port = 3000;
 
 // dotenv :-
 import dotenv from "dotenv";
@@ -33,6 +32,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/user", userRouter);
 app.use("/api/project", projectRouter);
 
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
