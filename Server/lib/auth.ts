@@ -9,7 +9,9 @@ import { prismaAdapter } from "better-auth/adapters/prisma";
 import prisma from "./prisma.js";
 
 const trustedOrigins = process.env.TRUSTED_ORIGINS?.split(",") || [];
-const isProduction = process.env.NODE_ENV === "production";
+// Detect HTTPS from BETTER_AUTH_URL instead of NODE_ENV
+// This way cookies work correctly even with NODE_ENV=development on deployed HTTPS servers
+const isHttps = process.env.BETTER_AUTH_URL?.startsWith("https://") ?? false;
 
 if (!process.env.BETTER_AUTH_URL) {
   throw new Error("BETTER_AUTH_URL environment variable is required");
@@ -38,10 +40,10 @@ export const auth = betterAuth({
         name: "auth_session",
         attributes: {
           httpOnly: true,
-          secure: isProduction,
-          sameSite: isProduction ? "none" : "lax",
+          secure: isHttps,
+          sameSite: isHttps ? "none" : "lax",
           path: "/",
-          domain: isProduction ? undefined : undefined,
+          domain: undefined,
         },
       },
     },
